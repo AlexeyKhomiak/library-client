@@ -1,0 +1,135 @@
+.popup_grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 25px;
+  padding: 15px;
+}
+
+.popup_grid .popupcol_wild {
+  grid-column: span 2;
+}
+
+.popup_grid .title {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.popup_grid .popup_img img {
+  width: 100%;
+  display: block;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.popup_grid .book_statistics {
+  margin: 0 auto;
+  padding: 25px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  max-width: 250px;
+  z-index: 1;
+  position: relative;
+}
+
+.popup_grid .popup_content {
+  line-height: 2em;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.popup_grid .author {
+  margin-bottom: 25px;
+}
+
+.popup_grid p {
+  padding-bottom: 15px;
+}
+
+.popup_grid .border_bottom {
+  border-bottom: 1px solid #000;
+}
+
+.popup {
+  background: white;
+  border: 1px solid #151515;
+  border-radius: 5px;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 900px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.my-mfp-slide-bottom .zoom-anim-dialog {
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  transform: translateY(-20px) perspective(600px) rotateX(10deg);
+}
+
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  transform: translateY(0) perspective(600px) rotateX(0);
+}
+
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+  opacity: 0;
+  transform: translateY(-10px) perspective(600px) rotateX(10deg);
+}
+
+.my-mfp-slide-bottom.mfp-bg {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.popup_close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}

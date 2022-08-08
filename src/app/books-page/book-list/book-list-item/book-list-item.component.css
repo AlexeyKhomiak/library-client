@@ -1,0 +1,65 @@
+.book_img {
+    position: relative;
+    padding: 15px;
+    z-index: 1;
+}
+
+.book_img img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.book_info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.book_info .book_title {
+    padding: 15px 0px;
+}
+
+.book_info .book_title h2 {
+    font-weight: 500;
+    width: calc(100% - 110px);
+}
+
+.book_info .book_statistics {
+    padding: 5px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    max-width: 250px;
+    z-index: 1;
+    position: relative;
+}
+
+.book_info .book_edit_btn {
+    z-index: 1;
+    width: 100px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.book_info .book_edit_btn .book_btn {
+    border: 1px solid #000;
+    height: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book_info .book_edit_btn .book_btn img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    object-fit: contain;
+}

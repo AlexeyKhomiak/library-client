@@ -1,0 +1,111 @@
+.tab {
+    overflow: hidden;
+    border: 1px solid #000;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tab_section .tabcontent {
+    background-color: #fafaff;
+}
+
+.tab_section .tab_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    padding: 15px;
+}
+
+.tabcontent {
+    /* display: none; */
+    padding: 6px 12px;
+    border: 1px solid #000;
+    border-top: none;
+}
+
+ .book_item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 25px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+/*
+.book_item .book_img {
+    position: relative;
+    padding: 15px;
+    z-index: 1;
+}
+.book_item .book_img img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+.book_item .book_info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    z-index: 1;
+}
+.book_item .book_info .book_title {
+  padding: 15px 0px; 
+} 
+.book_item .book_info .book_title h2 {
+    font-weight: 500;
+    width: calc(100% - 110px);
+}
+.book_item .book_info .book_statistics {
+     padding: 25px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    max-width: 250px;
+    z-index: 1;
+    position: relative;
+}
+.book_item .book_info .book_edit_btn {
+    z-index: 1;
+    width: 100px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.book_item .book_info .book_edit_btn .book_btn {
+    border: 1px solid #000;
+    height: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book_item .book_info .book_edit_btn .book_btn img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    object-fit: contain;
+} */

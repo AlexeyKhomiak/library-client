@@ -1,0 +1,27 @@
+<div id="popup1" class="zoom-anim-dialog mfp-hide popup">
+  <div class="popup_close" (click)="closeModal()">X</div>
+  <div class="popup_grid">
+    <div class="popupcol_wild">
+      <div class="title border_bottom">Details</div>
+    </div>
+    <div class="popupcol">
+      <div class="popup_img">
+        <img [src]="cover" alt="">
+      </div>
+      <div class="book_statistics">
+        <div class="book_stat"> Reviews : {{reviewsNumber}} </div>
+        <div class="book_stat"> Rating : {{rating | number:'1.2-2'}}</div>
+      </div>
+    </div>
+    <div class="popupcol">
+      <h1>{{title}}</h1>
+      <div class="author">{{author}}</div>
+      <div class="popup_content">
+        {{content}}
+      </div>
+    </div>
+    <div class="popupcol_wild border_bottom" *ngFor="let review of reviews">
+      <app-view-book-reviewer [review]="review"></app-view-book-reviewer>
+    </div>
+  </div>
+</div>

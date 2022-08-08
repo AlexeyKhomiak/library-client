@@ -1,0 +1,14 @@
+<div class="tab_section">
+
+  <div class="tab">
+    <button class="tablinks" [style.background-color]="activeFlg ? 'grey' : 'lightgrey'" (click)="setActiveTab('all')">All</button>
+    <button class="tablinks" [style.background-color]="!activeFlg ? 'grey' : 'lightgrey'" (click)="setActiveTab('Recommended')">Recommended</button>
+  </div>
+
+  <div class="tabcontent tab_grid">
+
+    <app-book-list-item class="book_item" *ngFor="let book of service.list" [book]="book"></app-book-list-item>
+
+  </div>
+
+</div>

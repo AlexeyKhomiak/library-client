@@ -1,0 +1,23 @@
+  <div class="book_img">
+    <img src="{{book.cover}}" alt="" >
+  </div>
+  <div class="book_info">
+    <div class="book_title" >
+      <h2>{{book.title}}</h2>
+    </div>
+    <div class="book_statistics">
+      <div hidden>{{book.id}}</div>
+      <div class="book_stat"> Reviews : {{book.reviewsNumber}} </div>
+      <div class="book_stat"> Rating : {{book.rating | number:'1.2-2'}}</div>
+    </div>
+    <div class="book_edit_btn">
+
+      <a class="book_btn popup-with-zoom-anim" href="#" (click)="showDetail(book.id)">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </a>
+      <a class="book_btn" href="#" (click)="populateForm(book.id)">
+        <i class="fa fa-pencil" aria-hidden="true"></i>
+      </a>
+
+    </div>
+  </div>
